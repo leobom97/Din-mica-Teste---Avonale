@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">Cadastro de Usuário</div>
+      <form action="#">
+        <div class="card-details">
+          <div class="card-box">
+            <span class="details">Nome Completo</span>
+            <input
+              type="text"
+              placeholder="Digite seu nome completo"
+              required
+            />
+          </div>
+          <div class="card-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Informe seu e-mail" required />
+          </div>
+          <div class="card-box">
+            <span class="details">Senha</span>
+            <input type="password" placeholder="Digite sua senha" required />
+          </div>
+          <div class="card-box">
+            <span class="details">Confirmação de Senha</span>
+            <input type="password" placeholder="Confirme sua senha" required />
+          </div>
+          <div class="card-box">
+            <span class="details">Data de Nascimento</span>
+            <input
+              type="date"
+              placeholder="Informe sua data de nascimento"
+              required
+            />
+          </div>
+          <div class="card-box">
+            <span class="details">É Brasileiro(a)?</span>
+            <select name="nationality" id="nationality" required>
+              <option value="Y">Sim</option>
+              <option value="N">Não</option>
+            </select>
+          </div>
+        </div>
+        <div class="circal-form">
+          <span class="circal-title">Aceita os termos e Condições?</span>
+          <div class="terms-conditions">
+            <input
+              type="checkbox"
+              id="termos"
+              name="termos"
+              value="Sim"
+              required
+            />
+            <label for="termos">Sim, aceito os termos</label>
+            <input type="checkbox" id="termos" name="termos" value="Nao" />
+            <label for="termos">Não aceito os termos</label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Cadastrar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
